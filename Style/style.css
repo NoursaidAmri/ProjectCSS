@@ -1,33 +1,42 @@
+/* en tete */
 header {
     display: flex;
     align-items: center;
     justify-content: space-between;
     background-color: white; 
-    padding: 10px;
+    padding: 10px 120px; /* ajustement des marges */
 }
 
+/* Style de base pour la liste ul */
 ul {
     list-style: none; 
     display: flex;
     width: 100%;
-    margin: 0;
-    padding: 0;
     align-items: center;
 }
 
+/* Style pour le logo */
 .Logo img {
     max-height: 50px;
     height: auto;
 }
 
+/* Style pour le menu */
 .menu {
     display: flex;
     gap: 20px; /* Espacement entre les éléments du menu */
     margin-left: auto; /* Pousse le menu à droite */
+    color: #B2BAC6;
 }
 
+/* Changement de couleur du texte au survol uniquement pour les éléments li dans .menu */
+.menu li:hover {
+    color: #00C3A5; /* Couleur du texte lorsque survolé */
+    cursor: pointer;
+}
+
+/* Style de base pour les éléments li */
 li {
     display: flex;
     align-items: center;
 }
-
