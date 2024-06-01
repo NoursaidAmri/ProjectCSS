@@ -1,0 +1,33 @@
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: white; 
+    padding: 10px;
+}
+
+ul {
+    list-style: none; 
+    display: flex;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    align-items: center;
+}
+
+.Logo img {
+    max-height: 50px;
+    height: auto;
+}
+
+.menu {
+    display: flex;
+    gap: 20px; /* Espacement entre les éléments du menu */
+    margin-left: auto; /* Pousse le menu à droite */
+}
+
+li {
+    display: flex;
+    align-items: center;
+}
+
