@@ -29,14 +29,75 @@ ul {
     color: #B2BAC6;
 }
 
-/* Changement de couleur du texte au survol uniquement pour les éléments li dans .menu */
 .menu li:hover {
     color: #00C3A5; /* Couleur du texte lorsque survolé */
     cursor: pointer;
 }
 
-/* Style de base pour les éléments li */
+
 li {
     display: flex;
     align-items: center;
+}
+
+/* les offres *//* les offres *//* les offres *//* les offres *//* les offres *//* les offres *//* les offres */
+
+.offers {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+}
+
+.box {
+    text-align: center;
+    width: 30%;
+    border: 1px solid #ccc;
+    padding: 20px;
+    height: 300px;
+    box-sizing: border-box; 
+    border-radius: 10px;
+}
+
+.box img {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 10px;
+}
+
+.box h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.box p {
+    font-size: 1rem;
+    margin-bottom: 20px;
+}
+
+.select {
+    margin-top: 20px;
+}
+
+.select select {
+    width: 100%;
+    padding: 4px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+#Forpatients{
+    background-color: #00CCB1;
+    color: white
+}
+
+#Fordoctors{
+    background-color: #3D83DF;
+    color: white
+}
+
+#Forclinics{
+    background-color: #1B2734;
+    color: white
 }
