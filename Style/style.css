@@ -7,8 +7,17 @@ header {
     background-color: white; 
     padding: 10px 120px; /* ajustement des marges */
 }
-
-
+/* Presentation */
+.container {
+    display: flex;
+  }
+  
+  .presentation {
+    flex: 1; 
+    margin: 10px; 
+    padding: 20px; /* Remplissage à l'intérieur des sections */  
+  }
+  
 
 /* Style de base pour la liste ul */
 ul {
@@ -52,7 +61,7 @@ li {
 }
 
 .centered img {
-    max-width: 20%; /* Pour s'assurer que l'image ne dépasse pas la largeur du conteneur */
+    max-width: 5%; /* Pour s'assurer que l'image ne dépasse pas la largeur du conteneur */
 }
 
 
