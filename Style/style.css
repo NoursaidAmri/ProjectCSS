@@ -1,23 +1,27 @@
-/* en tete */
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,500,700|Work+Sans:300,400,500,600,700&display=swap); /*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
+html {
+font-family: sans-serif;
 
 header {
     display: flex;
     align-items: center;
     justify-content: space-between;
     background-color: white; 
-    padding: 10px 120px; /* ajustement des marges */
+    width: 100%;  /* Utiliser la largeur complète */
+    padding: 10px 20px;  /* Ajout de rembourrage pour un espacement interne */
+    box-sizing: border-box;  /* Assure que le padding est inclus dans la largeur totale */
 }
+
 /* Presentation */
 .container {
     display: flex;
-  }
+}
   
-  .presentation {
+.presentation {
     flex: 1; 
     margin: 10px; 
     padding: 20px; /* Remplissage à l'intérieur des sections */  
-  }
-  
+}
 
 /* Style de base pour la liste ul */
 ul {
@@ -46,7 +50,6 @@ ul {
     cursor: pointer;
 }
 
-
 li {
     display: flex;
     align-items: center;
@@ -63,7 +66,6 @@ li {
 .centered img {
     max-width: 5%; /* Pour s'assurer que l'image ne dépasse pas la largeur du conteneur */
 }
-
 
 /* les offres *//* les offres *//* les offres *//* les offres *//* les offres *//* les offres *//* les offres */
 body {
@@ -115,17 +117,103 @@ body {
     font-size: 1rem;
 }
 
-#Forpatients{
+#Forpatients {
     background-color: #00CCB1;
-    color: white
+    color: white;
 }
 
-#Fordoctors{
+#Fordoctors {
     background-color: #3D83DF;
-    color: white
+    color: white;
 }
 
-#Forclinics{
+#Forclinics {
     background-color: #1B2734;
-    color: white
+    color: white;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr; /* Trois colonnes égales */
+    grid-template-rows: repeat(5, auto); /* Cinq lignes automatiques */
+    gap: 1px; /* Espacement entre les éléments */
+    align-items: start;
+    size: 5%;
+}
+
+
+.ecriture {
+    color: #00C3A5; /* Couleur du texte */
+    font-size: 200%;
+    grid-column: 1 / 2; /* Place le texte dans la première colonne */
+    grid-row: 1 / 6; /* Le texte occupe toutes les lignes de la première colonne */
+    padding-right: 20px;
+    padding-left: 80px;
+}
+
+.logo img {
+    max-width: 80px; /* Définir la largeur maximale des logos */
+    max-height: 30px; /* Définir la hauteur maximale des logos */
+    height: auto;
+    width: auto;
+    margin: auto; /* Centrer les images à l'intérieur de leurs conteneurs */
+}
+.logos {
+    display: contents; /* Permet aux éléments enfants d'être des éléments de grille individuels */
+}
+
+.logo:nth-child(1) {
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+}
+
+.logo:nth-child(2) {
+    grid-column: 3 / 4;
+    grid-row: 1 / 2;
+}
+
+.logo:nth-child(3) {
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+}
+
+.logo:nth-child(4) {
+    grid-column: 3 / 4;
+    grid-row: 2 / 3;
+}
+
+.logo:nth-child(5) {
+    grid-column: 2 / 3;
+    grid-row: 3 / 4;
+}
+
+.logo:nth-child(6) {
+    grid-column: 3 / 4;
+    grid-row: 3 / 4;
+}
+
+.logo:nth-child(7) {
+    grid-column: 2 / 3;
+    grid-row: 4 / 5;
+}
+
+.logo:nth-child(8) {
+    grid-column: 3 / 4;
+    grid-row: 4 / 5;
+}
+
+.logo:nth-child(9) {
+    grid-column: 2 / 3;
+    grid-row: 5 / 6;
+}
+
+.logo:nth-child(10) {
+    grid-column: 3 / 4;
+    grid-row: 5 / 6;
+}
+
+.logo img {
+    max-width: 80%; /* Ajustez cette valeur pour réduire la taille des logos */
+    height: auto;
+    margin: auto; /* Centrer les images à l'intérieur de leurs conteneurs */
 }
