@@ -291,3 +291,19 @@ body {
     height: auto;
     margin-bottom: 10px;
 }
+section5 {
+    display: flex;
+    justify-content: center; /* Centre le contenu horizontalement */
+  }
+  
+  .texteclass5 {
+    display: grid;
+    grid-template-columns: 1fr 446px 1fr; /* Par exemple, la deuxième colonne a une largeur de 100px */
+    grid-template-rows: 0.5fr;
+    align-items: center; /* Centre le contenu verticalement */
+  }
+  
+  .texteclass5 p {
+    text-align: center; /* Centre le texte horizontalement */
+    grid-column: 2; /* Place le paragraphe dans la deuxième colonne */
+  }
