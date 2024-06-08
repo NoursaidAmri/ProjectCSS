@@ -64,7 +64,7 @@ li {
 }
 
 .centered img {
-    max-width: 5%; /* Pour s'assurer que l'image ne dépasse pas la largeur du conteneur */
+    max-width: 20%; /* Pour s'assurer que l'image ne dépasse pas la largeur du conteneur */
 }
 
 /* les offres *//* les offres *//* les offres *//* les offres *//* les offres *//* les offres *//* les offres */
