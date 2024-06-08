@@ -217,3 +217,77 @@ body {
     height: auto;
     margin: auto; /* Centrer les images à l'intérieur de leurs conteneurs */
 }
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.section4 {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 20px;
+    padding: 60px 50px;
+    font-family: Work Sans, Arial, sans-serif;
+    background-color: #D0FAF4; /* Couleur de fond pour toute la largeur */
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.section4header {
+    grid-column: 1;
+    padding-top: 60px;
+}
+
+.section4header h2 {
+    color: #00b39b;
+    font-weight: 300;
+    letter-spacing: -0.3px;
+}
+
+.section4header p {
+    padding-top: 20px;
+    font-size: 15px;
+    color: #747474;
+    padding-bottom: 50px;
+}
+
+.section4fourparts {
+    grid-column: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.grid-layout {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px; /* Espace entre les éléments */
+}
+
+.grid-layout div {
+    background-color: #fff;
+    text-align: center;
+    border-radius: 2px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.section4fourparts h3 {
+    font-size: 1.8461538462em;
+    color: #00b39b;
+    font-weight: 300;
+    letter-spacing: -0.3px;
+}
+
+.section4fourparts p {
+    font-size: 0.8125em;
+    font-weight: 400;
+    color: #747474;
+}
+
+#leader img, #patients img, #appointments img, #doctors img {
+    width: 25px;
+    height: auto;
+    margin-bottom: 10px;
+}
